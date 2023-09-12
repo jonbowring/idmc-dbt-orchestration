@@ -1,0 +1,1 @@
+1>&2 dbt run --profiles-dir "C:\Users\jbowring\.dbt"
