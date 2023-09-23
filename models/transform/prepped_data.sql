@@ -1,11 +1,11 @@
-SELECT A.ID 
-    , FIRST_NAME
-    , LAST_NAME
-    , birthdate
-    , BOOKING_REFERENCE
-    , HOTEL
-    , BOOKING_DATE
-    , COST
+SELECT A."id" 
+    , "first_name"
+    , "last_name"
+    , "birthdate"
+    , "booking_reference"
+    , "hotel"
+    , "booking_date"
+    , "cost"
 FROM {{ref('customer')}}  A
 JOIN {{ref('combined_bookings')}} B
-on A.ID = B.ID
+on A."id" = B."id"

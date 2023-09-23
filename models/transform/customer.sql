@@ -1,6 +1,6 @@
-SELECT ID 
-    , FIRST_NAME
-    , LAST_NAME
-    , birthdate
+SELECT "id" 
+    , "first_name"
+    , "last_name"
+    , "birthdate"
 FROM
-DEMO_DB.RAW.CUSTOMERS
+DEMO_DB.RAW."customers"
