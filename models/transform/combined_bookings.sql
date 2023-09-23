@@ -1,19 +1,19 @@
 select 
-ID, 
-BOOKING_REFERENCE, 
-HOTEL, 
-BOOKING_DATE, 
-COST 
+"id", 
+"booking_reference", 
+"hotel", 
+"booking_date", 
+"cost" 
 from 
-DEMO_DB.RAW.BOOKINGS_1
+DEMO_DB.RAW."bookings_1"
 
 union all
 
 select 
-ID, 
-BOOKING_REFERENCE, 
-HOTEL, 
-BOOKING_DATE, 
-COST 
+"id", 
+"booking_reference", 
+"hotel", 
+"booking_date", 
+"cost" 
 from 
-DEMO_DB.RAW.BOOKINGS_2
+DEMO_DB.RAW."bookings_2"

@@ -1,8 +1,8 @@
 SELECT
-  BOOKING_DATE,
-  HOTEL,
-  COUNT(ID) as count_bookings
+  "booking_date",
+  "hotel",
+  COUNT("id") as "count_bookings"
 FROM {{ ref('prepped_data') }}
 GROUP BY
-  BOOKING_DATE,
-  HOTEL
+  "booking_date",
+  "hotel"
