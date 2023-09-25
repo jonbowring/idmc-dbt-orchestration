@@ -3,4 +3,4 @@ SELECT "id"
     , "last_name"
     , "birthdate"
 FROM
-DEMO_DB.RAW."customers"
+DEMO_DB.RAW."customers{{ var('student_num') }}"
