@@ -5,7 +5,7 @@ select
 "booking_date", 
 "cost" 
 from 
-DEMO_DB.RAW."bookings_1"
+DEMO_DB.RAW."bookings_1{{ var('student_num') }}"
 
 union all
 
@@ -16,4 +16,4 @@ select
 "booking_date", 
 "cost" 
 from 
-DEMO_DB.RAW."bookings_2"
+DEMO_DB.RAW."bookings_2{{ var('student_num') }}"
